@@ -10,15 +10,15 @@ center <<-EOS
 EOS
 
 block <<-EOS
-   Prólogo
-  ──────────────────────────────
-   1.- RDD: README first
-   2.- WhatIs\e[1mThor\e[0m.com
-   3.- Redminerb's Thor
-   4.- Testing Faraday...
-   5.- Surprise, surprise.
-  ──────────────────────────────
-   Epílogo
+   Prólogo________________________g+2
+  ────────────────────────────────────
+   1.- RDD: README first_________g+10
+   2.- WhatIs\e[1mThor\e[0m.com__g+29
+   3.- Redminerb's Thor__________g+35
+   4.- Testing Faraday...________g+39
+   5.- Surprise, surprise._______g+43
+  ────────────────────────────────────
+   Epílogo_______________________g+55
 EOS
 
 center <<-EOS
@@ -143,7 +143,7 @@ section "* WhatIs\e[1mThor\e[0m.com *" do
   EOS
 
   code <<-EOS
-    SUBCOMMANDS 
+    \e[1mSUBCOMMANDS\e[0m
   EOS
 
   code <<-EOS
@@ -221,6 +221,8 @@ section "* \e[1mTesting Faraday...\e[0m *" do
     But... Faraday have its own tests!
 
     Much better \e[1man integration test\e[0m
+
+    (me estaba complicando, ¡gracias Rossi!)
   EOS
 
   block <<-EOS
@@ -233,14 +235,14 @@ section "* \e[1mTesting Faraday...\e[0m *" do
         describe 'users command' do
           describe 'list subcommand' do
             before { VCR.insert_cassette 'users_list' }
-            after { VCR.eject_cassette }
+            after  { VCR.eject_cassette }
 
             let(:output) do
               capture(:stdout) { subject.users 'list' }
             end
 
             it 'give us all the users in our Redmine', :vcr do
-              output.must_include "\tnando\t"
+              output.must_include "\\tnando\\t"
             end
           end
         end

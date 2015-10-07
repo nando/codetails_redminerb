@@ -13,7 +13,7 @@ block <<-EOS
    Prólogo________________________g+2
   ────────────────────────────────────
    1.- RDD: README first_________g+10
-   2.- WhatIs\e[1mThor\e[0m.com__g+29
+   2.- WhatIs\e[1mThor\e[0m.com____________g+29
    3.- Redminerb's Thor__________g+35
    4.- Testing Faraday...________g+39
    5.- Surprise, surprise._______g+43
